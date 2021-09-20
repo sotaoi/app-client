@@ -15,5 +15,5 @@
     "noEmitOnError": true,
     "jsx": "react"
   },
-  "include": ["./lib/**/*", "./scripts"]
+  "exclude": ["./node_modules"]
 }
