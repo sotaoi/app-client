@@ -12,12 +12,12 @@ const Loading: React.FunctionComponent = () => {
       );
     case Helper.isMobile():
       return (
-        <React.Fragment>
+        <View style={{ flex: 1 }}>
           <StatusBar barStyle={'dark-content'} />
-          <View>
-            <Text>...</Text>
+          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text style={{ fontSize: 65 }}>...</Text>
           </View>
-        </React.Fragment>
+        </View>
       );
     case Helper.isElectron():
       // nothing here yet
