@@ -29,7 +29,7 @@ const routes: RouterPropsFn = clientRoutes('sControlPanelGate:sControlPanelMain:
       prefix: '/gate',
       layout: 'app.layouts.gate',
       routes: {
-        '!/': HomeRoute,
+        // '!/': HomeRoute,
         // moonlightmoonshine (app admin system, bundle admin system)
         '/register/{repository}(/{filters})?': RegisterUserRoute,
         '/auth/{repository}': AuthUserRoute,
