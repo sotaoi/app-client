@@ -27,6 +27,7 @@ class UpdateUserView extends ViewComponent<UpdateUserFormProps> {
     const registerUserFormConstructor = FormConstructor(
       {
         email: InputField.input(user.email),
+        name: InputField.input(user.name),
         // add user password change
         avatar: FileField.input(user.avatar),
       },

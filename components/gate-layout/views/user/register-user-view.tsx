@@ -23,7 +23,7 @@ abstract class RegisterUserView extends ViewComponent<RegisterUserFormProps> {
       {
         email: InputField.input(''),
         password: InputField.input(''),
-        name: InputField.input(''),
+        name: InputField.input(null),
         avatar: FileField.input(null),
       },
       results.validations,

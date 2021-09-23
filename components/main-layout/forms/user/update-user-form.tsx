@@ -41,6 +41,21 @@ const UpdateUserForm = (props: { form: UpdateForm }): null | React.ReactElement 
         <br />
         <br />
 
+        {fields.name.wasTouched() &&
+          fields.name.getErrors().map((error, index) => (
+            <div key={index} style={{ color: '#ff3333', marginBottom: 10 }}>
+              {error}
+            </div>
+          ))}
+        <fields.name.component
+          className={
+            'px-3 py-3 placeholder-gray-400 text-gray-700 relativ bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline'
+          }
+          placeholder={'name'}
+        />
+        <br />
+        <br />
+
         {fields.avatar.wasTouched() &&
           fields.avatar.getErrors().map((error: any, index: any) => (
             <div key={index} style={{ color: '#ff3333', marginBottom: 10 }}>
