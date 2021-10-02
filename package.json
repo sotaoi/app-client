@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "bootstrap": "npm install --no-audit --no-funds"
+    "bootstrap": "npm install --no-audit --no-fund"
   },
   "peerDependencies": {
     "@sotaoi/client": "file:../packages/sotaoi-client",
