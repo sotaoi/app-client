@@ -1,6 +1,6 @@
 import { RequestAbortHandler } from '@sotaoi/client/components';
 import { FormValidations } from '@sotaoi/omni/input';
-import { user } from '@sotaoi/omni/forms/user-forms';
+import { user } from '@app/omni/forms/user-forms';
 
 const getUserStoreFormValidations = () => {
   return (props: { [key: string]: any }, requestAbortHandler: RequestAbortHandler): Promise<FormValidations> =>

@@ -10,7 +10,7 @@ import { FileField } from '@sotaoi/client/forms/fields/file-field';
 import { getUserUpdateFormValidations } from '@app/client/queries/validation-queries';
 import { UpdateForm } from '@sotaoi/client/forms/form-classes/update-form';
 
-// todo mediumprio: (and in any component in general) handle component error
+// todo lowprio: handle component error (here and in any component in general)
 interface UpdateUserFormProps {
   uuid: string;
 }

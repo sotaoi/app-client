@@ -52,7 +52,7 @@ const routes: RouterPropsFn = clientRoutes('sControlPanelGate:sControlPanelMain:
         '/user/list/all': UsersRoute,
         '/user/edit/{uuid}': UpdateUserRoute,
       },
-      // todo here: facade auth route if not logged in
+      // todo lowprio: facade auth route if not logged in
       // facade: {
       //   route: '/gate/auth/user',
       //   condition: (): boolean => {
