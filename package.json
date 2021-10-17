@@ -13,7 +13,7 @@
     "clean:aclient": "node ./scripts/clean/clean-aclient"
   },
   "peerDependencies": {
-    "@app/omni": "git+https://github.com/sotaoi/app-omni#0.9.1",
+    "@app/omni": "file:../app-omni",
     "@sotaoi/client": "git+https://github.com/sotaoi/client#0.9.1",
     "@sotaoi/omni": "git+https://github.com/sotaoi/omni#0.9.1",
     "react": "16.13.1",
