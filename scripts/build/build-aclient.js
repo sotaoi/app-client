@@ -5,7 +5,7 @@ const { build } = require('@app/client/scripts/routines/build');
 const main = async () => {
   //
 
-  await build(true);
+  await build(false);
 
   //
 };

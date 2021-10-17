@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
+    "declaration": true,
     "skipLibCheck": true,
     "noImplicitAny": true,
     "allowJs": true,
@@ -16,5 +17,5 @@
     "noEmitOnError": true,
     "jsx": "react"
   },
-  "exclude": ["./node_modules", "./scripts", "./var"]
+  "exclude": ["./deployment", "./node_modules", "./scripts", "./tmp.deployment", "./var"]
 }

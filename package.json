@@ -9,6 +9,7 @@
   "scripts": {
     "bootstrap": "npm install --no-audit --no-fund",
     "bootstrap:prod": "npm install --production --no-audit --no-fund",
+    "build:aclient": "node ./scripts/build/build-aclient",
     "deploy:aclient": "node ./scripts/deploy/deploy-aclient",
     "clean:aclient": "node ./scripts/clean/clean-aclient"
   },
