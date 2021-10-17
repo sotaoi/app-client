@@ -16,5 +16,5 @@
     "noEmitOnError": true,
     "jsx": "react"
   },
-  "exclude": ["./node_modules", "./var"]
+  "exclude": ["./node_modules", "./scripts", "./var"]
 }

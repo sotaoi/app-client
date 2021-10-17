@@ -7,7 +7,10 @@
     "node": "14.x"
   },
   "scripts": {
-    "bootstrap": "npm install --no-audit --no-fund"
+    "bootstrap": "npm install --no-audit --no-fund",
+    "bootstrap:prod": "npm install --production --no-audit --no-fund",
+    "deploy:aclient": "node ./scripts/deploy/deploy-aclient",
+    "clean:aclient": "node ./scripts/clean/clean-aclient"
   },
   "peerDependencies": {
     "@app/omni": "git+https://github.com/sotaoi/app-omni#0.9.1",
