@@ -1,11 +1,11 @@
 #!/bin/env node
 
-const { build } = require('@app/client/scripts/routines/build');
+const { buildAclientRoutine } = require('@app/client/scripts/routines/build-aclient-routine');
 
 const main = async () => {
   //
 
-  await build(true);
+  await buildAclientRoutine(true);
 
   //
 };

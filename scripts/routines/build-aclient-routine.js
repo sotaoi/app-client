@@ -3,7 +3,7 @@ const path = require('path');
 const { Helper } = require('@sotaoi/omni/helper');
 const { execSync } = require('child_process');
 
-const build = async (deploy) => {
+const buildAclientRoutine = async (deploy) => {
   if (typeof deploy !== 'boolean') {
     throw new Error('Bad deployment flag');
   }
@@ -75,4 +75,4 @@ const build = async (deploy) => {
   //
 };
 
-module.exports = { build };
+module.exports = { buildAclientRoutine };
