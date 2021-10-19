@@ -11,6 +11,7 @@
     "bootstrap:prod": "npm install --production --no-audit --no-fund",
     "build:aclient": "node ./scripts/build/build-aclient",
     "deploy:aclient": "node ./scripts/deploy/deploy-aclient",
+    "clean:bootstrap": "node ./scripts/clean/clean-bootstrap",
     "clean:aclient": "node ./scripts/clean/clean-aclient"
   },
   "peerDependencies": {
