@@ -32,9 +32,12 @@ const buildAclientRoutine = async (deploy) => {
     path.resolve('./tmp.deployment'),
   ]);
 
+  delete packageJson.devDependencies;
+  fs.writeFileSync(path.resolve('./deployment/package.json'), JSON.stringify(packageJson, null, 2));
+
+  execSync('npm run bootstrap:prod', { cwd: path.resolve('./deployment'), stdio: 'inherit' });
   execSync('npx tsc', { cwd: path.resolve('./deployment'), stdio: 'inherit' });
   fs.unlinkSync(path.resolve('./deployment/tsconfig.json'));
-  execSync('npm run bootstrap:prod', { cwd: path.resolve('./deployment'), stdio: 'inherit' });
 
   Helper.iterateRecursiveSync(
     fs,
